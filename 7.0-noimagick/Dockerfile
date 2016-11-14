@@ -17,3 +17,4 @@ RUN pecl install -o -f redis \
   &&  echo "extension=redis.so" > /usr/local/etc/php/conf.d/redis.ini
 
 RUN echo "date.timezone=Europe/Prague" > /usr/local/etc/php/conf.d/datetime.ini
+RUN echo "memory_limit=-1" > /usr/local/etc/php/conf.d/memory_limit.ini
